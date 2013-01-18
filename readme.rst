@@ -20,7 +20,7 @@ Te koeficiente dobimo tako, da najprej amplitudo spektra signala kvadriramo, da 
 
 Primer filtrov, uporabljenih za pridobivanje koeficientov. Na sliki je 13 filtrov za 13 koeficientov, sam sem uporabil 41 filtrov.
 
-.. image:: mfcc_filtri.png
+.. image:: ./mfcc_filtri.png
   :scale: 50%
 
 Tako dobljeno končno število koeficientov ustreza jakosti signala na določenem frekvenčnem območju, ki ga posamezen filter prepusti. Te koeficiente se zatem logaritmira, da bolje predstavljajo jakost, kakor jo zaznava uho. Nazadnje nad dobljenimi koeficienti izvedemo še DCT tipa 2, da dobimo koeficiente MFCC.
@@ -110,7 +110,7 @@ Z upoštevanjem zgoraj navedenih omejitev je sistem dovolj dobro delujoč, da se
 
 
 
-.. _`govorec.py`: ./koda/govorec.py
+.. _`govorec.py`: ./govorec.py
 .. _`MFCC`: http://stackoverflow.com/questions/5835568/how-to-get-mfcc-from-an-fft-on-a-signal
 
 
